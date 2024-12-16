@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Application</h1>
+        <a href="/login" class="btn">Login</a>
+        <a href="/register" class="btn btn-register">Register</a>
+
+        <div>
+            <h2>Video Feed from Your Camera</h2>
+            <video id="user-video" width="640" height="480" autoplay></video>
+        </div>
+
+        <!-- Optional: Show motion or face recognition results -->
+        <div>
+            <h3>Motion Detected:</h3>
+            <p id="motion-status">Waiting for motion...</p>
+        </div>
+    </div>
+
+    <script src="static/test.js"></script>
+</body>
+</html>
